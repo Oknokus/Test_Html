@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap');
+
+
+:root{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    width: 1920px; 
+    height: 1265px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    resize: none;    
+    background: rgba(17, 10, 29, 1);
+    color: white;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
