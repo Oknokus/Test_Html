@@ -48,14 +48,14 @@ const Main = () => {
                     <div className={styles.container_banner}>
                         <div className={styles.banner_lineLeft}>
                                 <img src={Shield1LeftImg} alt="sheid" />
-                            <div className={styles.divImg} style={{marginTop:"20px"}}>
-                                <img src={Shield2LeftImg} alt="sheid" />
+                            <div className={styles.divImg} data-content="FromDown-toUp" style={{marginTop:"20px"}}>
+                                <img className={styles.imgAnimationBottom} src={Shield2LeftImg} alt="sheid" />
                             </div>
                                 <img src={Shield3LeftImg} alt="sheid" />
                                 <img src={Shield4LeftImg} alt="sheid" />
                                 <img src={Shield5LeftImg} alt="sheid" />                          
                             <div className={styles.divImg}>
-                                <img src={Shield6LeftImg} alt="sheid" />
+                                <img className={styles.imgAnimationBottom} src={Shield6LeftImg} alt="sheid" />
                             </div>                                
                         </div>
 
@@ -63,8 +63,8 @@ const Main = () => {
                                 <img src={Shield1CenterImg} alt="sheid" />                            
                                 <img src={Shield2CenterImg} alt="sheid" />                          
                                 <img src={Shield3CenterImg} alt="sheid" />
-                            <div className={styles.divImg}>
-                                <img className={styles.imgLIneCenter} src={Shield4CenterImg} alt="sheid" />
+                            <div data-content="FromUp toDown" className={styles.divImg}>
+                                <img className={styles.imgAnimationTop} src={Shield4CenterImg} alt="sheid" />
                             </div>                           
                                 <img src={Shield5CenterImg} alt="sheid" /> 
                                 <img src={Shield6CenterImg} alt="sheid" />                           
@@ -73,7 +73,7 @@ const Main = () => {
 
                         <div className={styles.banner_lineRight}>
                             <div className={styles.divImg} style={{border:"4px solid rgba(255, 255, 255, 1)"}}> 
-                                <img src={Shield1RihtImg} alt="sheid" />
+                                <img className={styles.imgAnimationBottom} src={Shield1RihtImg} alt="sheid" />
                             </div>
                                 <img src={Shield2RihtImg} alt="sheid" />                            
                                 <img src={Shield3RihtImg} alt="sheid" />

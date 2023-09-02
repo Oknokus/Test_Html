@@ -88,11 +88,28 @@
     margin-bottom: 24px;
     display: flex;
     justify-content: center;    
-}
+}   
 .divImg img{
     position: absolute;
-    bottom: 0;  
+    bottom: 0;     
 }
+.imgAnimationBottom{
+    content: attr(data-content);
+    display: inline-block;
+    position: absolute;
+}
+@keyframes FromDown-toUp {
+    from {      
+      bottom: 0%;
+      }
+    to {
+      bottom: 55%;      
+      }
+  }  
+.imgAnimationBottom{
+    animation: FromDown-toUp 5s infinite alternate;
+}
+
 .banner_lineCenter{
     margin-top: 17px;
 }
@@ -105,9 +122,22 @@
 .banner_lineCenter img:nth-child(3){
     margin-bottom: 23px;
 }
-.imgLIneCenter{
+.imgAnimationTop{
     position: absolute;
     top: 0;
+    content: attr(data-content);
+    display: inline-block;
+}
+@keyframes FromUp-toDown {
+    from {      
+      top: 0%;
+      }
+    to {
+      top: 55%;      
+      }
+  } 
+.imgAnimationTop{
+    animation: FromUp-toDown 5s infinite alternate;
 }
 .banner_lineCenter img:nth-child(5){
     margin-top: 35px;
