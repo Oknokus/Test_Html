@@ -5,7 +5,6 @@ import Shield4LeftImg from "./assets/bannerLeft/Shield4.svg";
 import Shield5LeftImg from "./assets/bannerLeft/Shield5.svg";
 import Shield6LeftImg from "./assets/bannerLeft/Shield6.svg";
 
-
 import Shield1CenterImg from "./assets/bannerCenter/Shield1.svg";
 import Shield2CenterImg from "./assets/bannerCenter/Shield2.svg";
 import Shield3CenterImg from "./assets/bannerCenter/Shield3.svg";
@@ -32,6 +31,8 @@ import styles from './Main.module.css';
 const Main = () => {     
     return (
         <section className={styles.main}>
+            <div className={styles.gradient}></div>
+            <div className={styles.gradient_circle}></div>
             <div className={styles.main_container}>
                 <div className={styles.container_left}>
                     <div className={styles.containerLeft_title}>
@@ -56,7 +57,8 @@ const Main = () => {
                                 <img src={Shield5LeftImg} alt="sheid" />                          
                             <div className={styles.divImg}>
                                 <img className={styles.imgAnimationBottom} src={Shield6LeftImg} alt="sheid" />
-                            </div>                                
+                            </div>  
+                                <img src={Shield5LeftImg} alt="sheid" />                                  
                         </div>
 
                         <div className={styles.banner_lineCenter}>
