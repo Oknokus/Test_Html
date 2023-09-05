@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-
-import IconPlanet from  "./assets/IconPlanet.svg";
+import iconPlanet from  "./assets/IconPlanet.svg";
+import iconPlanetAdaptive from  "../../../adaptive/Btn. - Language.svg";
+import menu from  "./../../../adaptive/Menu.svg";
 
 
 import styles from './Header.module.css';
@@ -22,9 +22,13 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className={styles.container_button}>
-                    <button><img src={IconPlanet} alt="IconPlanet" /> EN</button>
+                    <button><img src={iconPlanet} alt="iconPlanet"/> EN</button>
                     <button>LOG IN</button>
-                    <button>SIGN UP</button>
+                    <button>SIGN UP</button>                     
+                </div>
+                <div className={styles.container_button_adaptive}>
+                    <button><img src={iconPlanetAdaptive} alt="iconPlanetAdaptive"/></button>
+                    <img src={menu} alt="menu" />     
                 </div>
             </div>
         </section>

@@ -37,7 +37,6 @@ const Main = () => {
                 <div className={styles.container_left}>
                     <div className={styles.containerLeft_title}>
                         <h1>HOUSE OF <span>GAMBLING</span></h1>
-                        
                     </div>
                     <div className={styles.containerLeft_description}>
                         <p>Raise your ROI with direct advertiser</p>
@@ -94,8 +93,9 @@ const Main = () => {
                             <ul className={styles.containerRight_content}>
                                 <div className={styles.divContent}>
                                     {
-                                        data.map(elem => 
-                                            <li className={styles.containerRight_text}>
+                                        data.map((elem, index )=> 
+                                            <li className={styles.containerRight_text}
+                                            key={index}>
                                                 <h1>{elem.text}</h1>
                                                 <p>{elem.data}</p>
                                             </li>
