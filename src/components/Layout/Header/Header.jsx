@@ -1,6 +1,7 @@
 import iconPlanet from  "./assets/IconPlanet.svg";
 import iconPlanetAdaptive from  "../../../adaptive/Btn. - Language.svg";
 import menu from  "./../../../adaptive/Menu.svg";
+import BurgerMenu from "../../burgerMenu/BurgerMenu";
 
 
 import styles from './Header.module.css';
@@ -27,8 +28,9 @@ const Header = () => {
                     <button>SIGN UP</button>                     
                 </div>
                 <div className={styles.container_button_adaptive}>
-                    <button><img src={iconPlanetAdaptive} alt="iconPlanetAdaptive"/></button>
-                    <img src={menu} alt="menu" />     
+                    <button><img className={styles.imgAdaptive} src={iconPlanetAdaptive} alt="iconPlanetAdaptive"/></button>
+                    {/* <img src={menu} alt="menu" />   */}
+                    <BurgerMenu />   
                 </div>
             </div>
         </section>

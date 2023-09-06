@@ -217,19 +217,17 @@
 }
 
     @media screen and (max-width: 320px) {
-        .header{
-            width: 320px; 
-            display: flex;          
-            padding:  0 10px 0 10px;  
+        .header{           
+            width: 320px;            
         }
         .header_container{
-            width: 300px;
+            width: 290px;
             height: 56px;
             display: flex;
             border-radius: 64px;
-            border: 2px solid rgba(71, 139, 249, 1);
             padding: 10px 14px 10px 14px;
             justify-content: space-between;
+            margin-left: -8px;
         }
         .container_logo{
             width: 54px;
@@ -244,7 +242,15 @@
             display: none;
         }
         .container_button_adaptive{
-            display: block;            
+            display: flex;     
+            align-items: center;       
+        }
+        .imgAdaptive{
+            margin-right: 4px;
+        }
+        .container_button_adaptive button{
+            background-color: transparent;
+            border: none;
         }
         
     

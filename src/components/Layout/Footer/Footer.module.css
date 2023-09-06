@@ -128,11 +128,11 @@ svg:hover{
 
 @media screen and (max-width: 320px) {
     .footer{
-        width: 320px;
-        height: 270px;
+        width: 320px;      
         text-align: center;
-        padding: 20px;        
-        transform: translateY(100%);
+        padding: 0;
+        transform: translateY(25%);
+        margin-left: -8px;
     }   
     .ulLInksButtons{  
         font-family: Lexend;

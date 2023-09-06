@@ -9,7 +9,7 @@ import styles from './Layout.module.css';
 
 const Layout = () => {
     return (
-        <div>
+        <div className={styles.container_layout}>
             <Header />  
             <Outlet/>
             <Footer />
